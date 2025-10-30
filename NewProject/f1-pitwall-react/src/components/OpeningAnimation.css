@@ -1,0 +1,196 @@
+/* Opening Animation - Complete Styling */
+
+.opening-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, #1a0808 0%, #0d0000 40%, #000000 100%);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: fadeOut 0.6s ease 3s forwards;
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; pointer-events: none; }
+}
+
+.animation-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(225, 6, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(225, 6, 0, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: grid-pulse 3s ease-in-out infinite;
+  opacity: 0.5;
+}
+
+@keyframes grid-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.02); }
+}
+
+.light-beam {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(225, 6, 0, 0.5) 50%, 
+    transparent 100%);
+  box-shadow: 0 0 30px rgba(225, 6, 0, 0.6);
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.particles {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(225, 6, 0, 0.3) 1px, transparent 1px);
+  background-size: 100px 100px;
+  opacity: 0.3;
+  animation: particles-move 20s linear infinite;
+}
+
+@keyframes particles-move {
+  from { background-position: 0 0; }
+  to { background-position: 100px 100px; }
+}
+
+.animation-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  animation: content-appear 1.5s ease forwards;
+}
+
+@keyframes content-appear {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.f1-logo-animation {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.logo-glow {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(circle, rgba(225, 6, 0, 0.4), transparent 70%);
+  filter: blur(40px);
+  animation: logo-glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes logo-glow-pulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.logo-icon {
+  font-size: 6rem;
+  filter: drop-shadow(0 0 30px rgba(225, 6, 0, 0.8));
+  animation: icon-bounce 2s ease-in-out infinite;
+}
+
+@keyframes icon-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.logo-text-anim {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 1rem;
+  background: linear-gradient(135deg, var(--white), var(--primary-red), var(--white));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-flow 3s linear infinite;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.loading-bar {
+  width: 300px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 2rem auto 1rem;
+  overflow: hidden;
+}
+
+.loading-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-red), var(--gold), var(--primary-red));
+  background-size: 200% 100%;
+  border-radius: 10px;
+  animation: loading-progress 3s ease-in-out forwards, gradient-slide 1.5s linear infinite;
+  box-shadow: 0 0 20px rgba(225, 6, 0, 0.6);
+}
+
+@keyframes loading-progress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@keyframes gradient-slide {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.tagline-anim {
+  color: var(--gray-400);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: tagline-fade 1.5s ease 0.5s both;
+}
+
+@keyframes tagline-fade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-icon {
+    font-size: 4rem;
+  }
+  
+  .logo-text-anim {
+    font-size: 2rem;
+  }
+  
+  .loading-bar {
+    width: 250px;
+  }
+  
+  .tagline-anim {
+    font-size: 0.9rem;
+  }
+}
+

@@ -1,0 +1,16 @@
+/* App.css - Minimal global app wrapper styles */
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App > div:not(.opening-animation) {
+  flex: 1;
+}
+
+/* Ensure footer is always at bottom */
+footer {
+  margin-top: auto;
+}

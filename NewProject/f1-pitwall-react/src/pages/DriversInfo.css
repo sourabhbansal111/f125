@@ -1,0 +1,116 @@
+/* Drivers Info Page */
+.drivers-info-page {
+  min-height: 100vh;
+  background: var(--dark-bg);
+}
+
+.drivers-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%);
+  margin-bottom: 4rem;
+}
+
+.drivers-grid-section {
+  padding: 2rem 5%;
+  max-width: 1600px;
+  margin: 0 auto 4rem;
+}
+
+.drivers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.driver-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.driver-card {
+  position: relative;
+  background: var(--card-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.driver-card:hover {
+  border-color: var(--primary-red);
+  transform: translateY(-15px);
+  box-shadow: 0 25px 50px rgba(225, 6, 0, 0.4);
+}
+
+.driver-number-badge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 60px;
+  height: 60px;
+  background: var(--primary-red);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white);
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(225, 6, 0, 0.5);
+}
+
+.driver-image-wrapper {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.driver-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.driver-card:hover .driver-image-wrapper img {
+  transform: scale(1.1);
+  filter: brightness(1) contrast(1.2);
+}
+
+.driver-info {
+  padding: 2rem;
+  text-align: center;
+}
+
+.driver-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.driver-info p {
+  color: var(--gray-400);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .drivers-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
