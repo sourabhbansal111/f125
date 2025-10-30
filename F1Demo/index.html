@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 PITWALL - Formula 1 Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- F1 Opening Animation -->
+    <div id="opening-animation" class="opening-animation">
+        <!-- Animated Background Grid -->
+        <div class="grid-background"></div>
+        
+        <!-- Enhanced Race Track -->
+        <div class="race-track">
+            <div class="track-line track-line-1"></div>
+            <div class="track-line track-line-2"></div>
+            <div class="track-line track-line-3"></div>
+            <div class="track-glow"></div>
+        </div>
+        
+        <!-- F1 Car with Speed Effects -->
+        <div class="car-wrapper">
+            <div class="speed-trail"></div>
+            <div class="f1-car">🏎️</div>
+            <div class="car-glow"></div>
+        </div>
+        
+        <!-- Enhanced Logo -->
+        <div class="opening-logo">
+            <div class="logo-text">
+                <span class="logo-f1">F1</span>
+                <span class="logo-divider"></span>
+                <span class="logo-pitwall">PITWALL</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+                <div class="progress-light"></div>
+            </div>
+            <div class="loading-text">INITIALIZING RACE CONTROL<span class="dots"></span></div>
+        </div>
+        
+        <!-- Professional Start Lights -->
+        <div class="start-lights">
+            <div class="lights-container">
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+            </div>
+        </div>
+        
+        <!-- Ambient Particles -->
+        <div class="particles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">🏎️</span>
+                    <span class="logo-text">F1 PITWALL</span>
+                </a>
+                </div>
+                <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="standings.html">Standings</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="race-results.html">Race Results</a></li>
+                <li><a href="qualifying.html">Qualifying</a></li>
+                <li><a href="drivers-info.html">Drivers</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="comparison.html">Comparison</a></li>
+                </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </nav>
+        </header>
+
+        <main>
+        <!-- Hero Section -->
+            <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-badge">2025 SEASON</div>
+                <h1 class="hero-title">
+                    <span class="title-line">Welcome to</span>
+                    <span class="title-main" data-text="F1 PITWALL">F1 PITWALL</span>
+                </h1>
+                <p class="hero-subtitle">Your Ultimate F1 Data & Visualization Hub with Live Updates</p>
+                <a href="#players" class="cta-button">
+                    <span>Explore Drivers</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+                <div class="data-ticker">
+                <span class="ticker-live">LIVE</span>
+                <div class="ticker-content">
+                    <p>🏎️ REAL-TIME F1 DATA | LIVE STANDINGS | RACE RESULTS | DRIVER STATS | TEAM PERFORMANCE | CIRCUITS INFO 🏁</p>
+                </div>
+                </div>
+            </section>
+
+        <!-- Featured Drivers Section -->
+        <section id="players" class="drivers-section">
+            <div class="section-header">
+                <div class="section-badge">2025 GRID</div>
+                <h2 class="section-title">Meet the Drivers</h2>
+                <p class="section-subtitle">The world's fastest racing drivers competing for glory</p>
+            </div>
+            
+            <div class="drivers-grid">
+                <a href="player-profile.html" class="driver-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/players1.png" alt="Max Verstappen">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">1</div>
+                        <h3 class="card-name">Max Verstappen</h3>
+                        <p class="card-team">Red Bull Racing</p>
+                        <div class="card-stats">
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                                62 Wins
+                            </span>
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                3x WDC
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="lewis-hamilton.html" class="driver-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/player2.jpg" alt="Lewis Hamilton">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">44</div>
+                        <h3 class="card-name">Lewis Hamilton</h3>
+                        <p class="card-team">Mercedes-AMG Petronas</p>
+                        <div class="card-stats">
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                                105 Wins
+                            </span>
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                7x WDC
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="lando-norris.html" class="driver-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/player3.jpg" alt="Lando Norris">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">4</div>
+                        <h3 class="card-name">Lando Norris</h3>
+                        <p class="card-team">McLaren F1 Team</p>
+                        <div class="card-stats">
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                                Speed King
+                            </span>
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                4 Wins
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="charles-leclerc.html" class="driver-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/player4.jpg" alt="Charles Leclerc">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">16</div>
+                        <h3 class="card-name">Charles Leclerc</h3>
+                        <p class="card-team">Scuderia Ferrari</p>
+                        <div class="card-stats">
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                                Ferrari Star
+                            </span>
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                26 Poles
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="oscar-piastri.html" class="driver-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/player5.jpg" alt="Oscar Piastri">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">81</div>
+                        <h3 class="card-name">Oscar Piastri</h3>
+                        <p class="card-team">McLaren F1 Team</p>
+                        <div class="card-stats">
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                                Rising Star
+                            </span>
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                2 Wins
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="sergio-perez.html" class="driver-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/Sergio Pérez.png" alt="Sergio Perez">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">11</div>
+                        <h3 class="card-name">Sergio Perez</h3>
+                        <p class="card-team">Red Bull Racing</p>
+                        <div class="card-stats">
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                                6 Wins
+                            </span>
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                39 Podiums
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="carlos-sainz.html" class="driver-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/carlos sainz.png" alt="Carlos Sainz">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">55</div>
+                        <h3 class="card-name">Carlos Sainz</h3>
+                        <p class="card-team">Scuderia Ferrari</p>
+                        <div class="card-stats">
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                                4 Wins
+                            </span>
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                26 Podiums
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="george-russell.html" class="driver-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/George Russell.png" alt="George Russell">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">63</div>
+                        <h3 class="card-name">George Russell</h3>
+                        <p class="card-team">Mercedes-AMG Petronas</p>
+                        <div class="card-stats">
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                                2 Wins
+                            </span>
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                11 Poles
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="fernando-alonso.html" class="driver-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/fernando alonso.png" alt="Fernando Alonso">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">14</div>
+                        <h3 class="card-name">Fernando Alonso</h3>
+                        <p class="card-team">Aston Martin</p>
+                        <div class="card-stats">
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                                32 Wins
+                            </span>
+                            <span class="stat">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                2x WDC
+                            </span>
+                        </div>
+                    </div>
+                </a>
+    </div>
+</section>
+        </main>
+
+        <footer>
+            <div class="footer-wave"></div>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🏎️</span>
+                        <span class="logo-text">F1 PITWALL</span>
+                    </div>
+                    <p class="footer-tagline">Your ultimate destination for real-time F1 data, statistics, and championship updates.</p>
+                    <div class="footer-stats">
+                        <div class="footer-stat-item">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Teams</span>
+                        </div>
+                        <div class="footer-stat-item">
+                            <span class="stat-number">20</span>
+                            <span class="stat-label">Drivers</span>
+                        </div>
+                        <div class="footer-stat-item">
+                            <span class="stat-number">24</span>
+                            <span class="stat-label">Races</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <a href="index.html">
+                        <span class="link-icon">🏠</span>
+                        <span>Home</span>
+                    </a>
+                    <a href="standings.html">
+                        <span class="link-icon">🏆</span>
+                        <span>Standings</span>
+                    </a>
+                    <a href="calendar.html">
+                        <span class="link-icon">📅</span>
+                        <span>Calendar</span>
+                    </a>
+                    <a href="race-results.html">
+                        <span class="link-icon">🏁</span>
+                        <span>Race Results</span>
+                    </a>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Explore</h3>
+                    <a href="drivers-info.html">
+                        <span class="link-icon">👤</span>
+                        <span>All Drivers</span>
+                    </a>
+                    <a href="teams.html">
+                        <span class="link-icon">🏎️</span>
+                        <span>All Teams</span>
+                    </a>
+                    <a href="comparison.html">
+                        <span class="link-icon">⚡</span>
+                        <span>Compare</span>
+                    </a>
+                    <a href="qualifying.html">
+                        <span class="link-icon">⏱️</span>
+                        <span>Qualifying</span>
+                    </a>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Connect</h3>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                            </svg>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <p class="newsletter-text">Get race updates</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email" class="newsletter-input">
+                            <button class="newsletter-btn">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 F1 PITWALL. All rights reserved.</p>
+                    <div class="footer-credits">
+                        <span>Data powered by <strong>Ergast API</strong></span>
+                        <span class="separator">•</span>
+                        <span>Made with ❤️ for F1 Fans</span>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <span class="separator">•</span>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Comparison - F1 PITWALL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🏎️</span>
+                <span class="logo-text">F1 PITWALL</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="standings.html">Standings</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="race-results.html">Race Results</a></li>
+                <li><a href="qualifying.html">Qualifying</a></li>
+                <li><a href="drivers-info.html">Drivers</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="comparison.html" class="active">Comparison</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Driver Comparison Section -->
+        <section class="comparison-section">
+        <div class="section-header">
+            <div class="section-badge">BATTLE MODE</div>
+            <h2 class="section-title">⚔️ Driver Comparison</h2>
+            <p class="section-subtitle">Compare two drivers head-to-head</p>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="driver-selector">
+                <h3>Select Driver 1</h3>
+                <select id="driver1-select" class="driver-dropdown">
+                    <option value="">Choose Driver...</option>
+                    <option value="verstappen">Max Verstappen</option>
+                    <option value="hamilton">Lewis Hamilton</option>
+                    <option value="norris">Lando Norris</option>
+                    <option value="leclerc">Charles Leclerc</option>
+                    <option value="piastri">Oscar Piastri</option>
+                </select>
+            </div>
+            
+            <div class="vs-icon">
+                <span>VS</span>
+            </div>
+            
+            <div class="driver-selector">
+                <h3>Select Driver 2</h3>
+                <select id="driver2-select" class="driver-dropdown">
+                    <option value="">Choose Driver...</option>
+                    <option value="verstappen">Max Verstappen</option>
+                    <option value="hamilton">Lewis Hamilton</option>
+                    <option value="norris">Lando Norris</option>
+                    <option value="leclerc">Charles Leclerc</option>
+                    <option value="piastri">Oscar Piastri</option>
+                </select>
+            </div>
+        </div>
+        
+        <button class="compare-button" id="compare-btn">
+            <span>🏁 COMPARE DRIVERS</span>
+        </button>
+        
+        <div id="comparison-results" class="comparison-results" style="display: none;">
+            <div class="driver-comparison-card" id="driver1-card">
+                <div class="comparison-header">
+                    <img src="" alt="" class="comparison-img">
+                    <h3 class="comparison-name"></h3>
+                    <p class="comparison-team"></p>
+                </div>
+                <div class="comparison-stats">
+                    <div class="stat-row">
+                        <span class="stat-label">Race Wins</span>
+                        <span class="stat-value" data-stat="wins"></span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Podiums</span>
+                        <span class="stat-value" data-stat="podiums"></span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Pole Positions</span>
+                        <span class="stat-value" data-stat="poles"></span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Championships</span>
+                        <span class="stat-value" data-stat="championships"></span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Points (2024)</span>
+                        <span class="stat-value" data-stat="points"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="battle-result">
+                <div class="trophy-icon">🏆</div>
+                <h3 id="winner-text">Winner: TBD</h3>
+                <p id="winner-reason"></p>
+            </div>
+            
+            <div class="driver-comparison-card" id="driver2-card">
+                <div class="comparison-header">
+                    <img src="" alt="" class="comparison-img">
+                    <h3 class="comparison-name"></h3>
+                    <p class="comparison-team"></p>
+                </div>
+                <div class="comparison-stats">
+                    <div class="stat-row">
+                        <span class="stat-label">Race Wins</span>
+                        <span class="stat-value" data-stat="wins"></span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Podiums</span>
+                        <span class="stat-value" data-stat="podiums"></span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Pole Positions</span>
+                        <span class="stat-value" data-stat="poles"></span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Championships</span>
+                        <span class="stat-value" data-stat="championships"></span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Points (2024)</span>
+                        <span class="stat-value" data-stat="points"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+            <div class="footer-wave"></div>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🏎️</span>
+                        <span class="logo-text">F1 PITWALL</span>
+                    </div>
+                    <p class="footer-tagline">Your ultimate destination for real-time F1 data, statistics, and championship updates.</p>
+                    <div class="footer-stats">
+                        <div class="footer-stat-item">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Teams</span>
+                        </div>
+                        <div class="footer-stat-item">
+                            <span class="stat-number">20</span>
+                            <span class="stat-label">Drivers</span>
+                        </div>
+                        <div class="footer-stat-item">
+                            <span class="stat-number">24</span>
+                            <span class="stat-label">Races</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <a href="index.html">
+                        <span class="link-icon">🏠</span>
+                        <span>Home</span>
+                    </a>
+                    <a href="standings.html">
+                        <span class="link-icon">🏆</span>
+                        <span>Standings</span>
+                    </a>
+                    <a href="calendar.html">
+                        <span class="link-icon">📅</span>
+                        <span>Calendar</span>
+                    </a>
+                    <a href="race-results.html">
+                        <span class="link-icon">🏁</span>
+                        <span>Race Results</span>
+                    </a>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Explore</h3>
+                    <a href="drivers-info.html">
+                        <span class="link-icon">👤</span>
+                        <span>All Drivers</span>
+                    </a>
+                    <a href="teams.html">
+                        <span class="link-icon">🏎️</span>
+                        <span>All Teams</span>
+                    </a>
+                    <a href="comparison.html">
+                        <span class="link-icon">⚡</span>
+                        <span>Compare</span>
+                    </a>
+                    <a href="qualifying.html">
+                        <span class="link-icon">⏱️</span>
+                        <span>Qualifying</span>
+                    </a>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Connect</h3>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                            </svg>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <p class="newsletter-text">Get race updates</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email" class="newsletter-input">
+                            <button class="newsletter-btn">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 F1 PITWALL. All rights reserved.</p>
+                    <div class="footer-credits">
+                        <span>Data powered by <strong>Ergast API</strong></span>
+                        <span class="separator">•</span>
+                        <span>Made with ❤️ for F1 Fans</span>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <span class="separator">•</span>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
